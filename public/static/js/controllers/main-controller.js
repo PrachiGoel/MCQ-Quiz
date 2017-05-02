@@ -1,6 +1,6 @@
 
 
-qbsApp.controller('MCQ-QuizController', function($scope, $rootScope) {
+qbsApp.controller('QuizController', function($scope, $rootScope) {
 	 $scope.questions = [
   {
     "Quest_no": "You: Hi, Tom. Thanks for meeting with me today.Tom: Sure, I’m interested in learning more about how AiveILS can help me.[Question]: What is the next step you should take?",
@@ -84,7 +84,7 @@ qbsApp.controller('MCQ-QuizController', function($scope, $rootScope) {
       $scope.questions[i].userAnswerans = false;
       $scope.questions[i].userAnswer = $scope.answers[i];
       for(var j=0;j<answers.length;j++){
-        answers[j].selected = "donno";
+        answers[j].selected = "not done";
         if ($scope.questions[i].userAnswer === answers[j].options && answers[j].ans===true){
           $scope.questions[i].userAnswerans = true;
           answers[j].selected = "true";

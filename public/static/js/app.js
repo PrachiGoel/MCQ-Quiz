@@ -12,9 +12,9 @@ qbsApp.config(function($routeProvider) {
   
  $routeProvider.when('/index', {
    templateUrl : 'views/main.html',
-   controller : 'MCQ-QuizController'
+   controller : 'QuizController'
  }).when('/', {
     templateUrl : 'views/main.html',
-    controller : 'MCQ-QuizController'
-    }); 
+    controller : 'QuizController'
+    });
 });
